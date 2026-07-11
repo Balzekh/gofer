@@ -16,6 +16,7 @@ const NAV_LINKS: NavLink[] = [
   { href: "#accueil", key: "accueil" },
   { href: "#presentation", key: "presentation" },
   { href: "#tarifs", key: "tarifs" },
+  { href: "#avis", key: "avis" },
   { href: "#faq", key: "faq" },
 ];
 

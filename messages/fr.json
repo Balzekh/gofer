@@ -6,8 +6,13 @@
       "accueil": "Accueil",
       "presentation": "Présentation",
       "tarifs": "Tarifs",
+      "avis": "Avis",
       "faq": "FAQ"
     },
     "login": "Se connecter"
+  },
+  "accueil": {
+    "headline": "Gagnez du temps sur tout le reste.",
+    "description": "Courses, livraisons, petites tâches : confiez-les à un gofer disponible près de chez vous."
   }
 }
