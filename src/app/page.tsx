@@ -1,4 +1,6 @@
 import { Accueil } from "@/components/sections/accueil";
+import { Avis } from "@/components/sections/avis";
+import { Faq } from "@/components/sections/faq";
 import { Presentation } from "@/components/sections/presentation";
 import { Tarifs } from "@/components/sections/tarifs";
 
@@ -9,8 +11,8 @@ export default function Home() {
         <Accueil />
         <Presentation />
         <Tarifs />
-        <section id="avis" className="min-h-screen scroll-mt-20 bg-muted/40" />
-        <section id="faq" className="min-h-screen scroll-mt-20 bg-background" />
+        <Avis />
+        <Faq />
       </main>
 
       <footer className="min-h-[50vh] bg-secondary" />
