@@ -1,0 +1,13 @@
+{
+  "header": {
+    "brand": "GOFER",
+    "ariaNav": "Navigation principale",
+    "nav": {
+      "accueil": "Accueil",
+      "presentation": "Présentation",
+      "tarifs": "Tarifs",
+      "faq": "FAQ"
+    },
+    "login": "Se connecter"
+  }
+}
