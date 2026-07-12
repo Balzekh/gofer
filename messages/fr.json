@@ -13,7 +13,12 @@
   },
   "accueil": {
     "headline": "Gagnez du temps sur tout le reste.",
-    "description": "Courses, livraisons, petites tâches : confiez-les à un gofer disponible près de chez vous."
+    "description": "Courses, livraisons, petites tâches : confiez-les à un gofer disponible près de chez vous.",
+    "searchWhatPlaceholder": "De quoi avez-vous besoin ?",
+    "searchWhatLabel": "Besoin",
+    "searchWherePlaceholder": "Où ?",
+    "searchWhereLabel": "Localisation",
+    "searchButton": "Rechercher"
   },
   "avis": {
     "title": "Ils nous font confiance",

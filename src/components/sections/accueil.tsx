@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
 
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 
 export function Accueil() {
   const t = useTranslations("accueil");
@@ -16,7 +18,19 @@ export function Accueil() {
 
       <p className="max-w-md text-sm text-muted-foreground">{t("description")}</p>
 
-      <Card className="min-h-[280px] w-full max-w-xl" />
+      <Card className="flex min-h-[280px] w-full max-w-xl flex-col items-center justify-center gap-4 p-8">
+        <Input
+          placeholder={t("searchWhatPlaceholder")}
+          aria-label={t("searchWhatLabel")}
+          className="w-full max-w-sm"
+        />
+        <Input
+          placeholder={t("searchWherePlaceholder")}
+          aria-label={t("searchWhereLabel")}
+          className="w-full max-w-sm"
+        />
+        <Button>{t("searchButton")}</Button>
+      </Card>
     </section>
   );
 }
