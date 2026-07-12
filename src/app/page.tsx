@@ -15,7 +15,7 @@ export default function Home() {
         <Faq />
       </main>
 
-      <footer className="min-h-[50vh] bg-secondary" />
+      <footer className="mx-6 h-72 rounded-t-3xl bg-secondary" />
     </>
   );
 }
