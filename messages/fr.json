@@ -20,8 +20,6 @@
     "searchWhereLabel": "Localisation",
     "searchButton": "Rechercher",
     "commander": "Commander",
-    "boxOneLabel": "Champ 1",
-    "boxTwoLabel": "Champ 2",
     "messagePlaceholder": "Décrivez votre besoin en détail…",
     "messageLabel": "Description du besoin",
     "charCount": "{count} / {max}",

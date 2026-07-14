@@ -52,13 +52,15 @@ export function Accueil() {
               <Input
                 value={boxOne}
                 onChange={(e) => setBoxOne(e.target.value)}
-                aria-label={t("boxOneLabel")}
+                placeholder={t("searchWhatPlaceholder")}
+                aria-label={t("searchWhatLabel")}
                 className="w-full max-w-xs"
               />
               <Input
                 value={boxTwo}
                 onChange={(e) => setBoxTwo(e.target.value)}
-                aria-label={t("boxTwoLabel")}
+                placeholder={t("searchWherePlaceholder")}
+                aria-label={t("searchWhereLabel")}
                 className="w-full max-w-xs"
               />
 
@@ -101,11 +103,15 @@ export function Accueil() {
         {!expanded && (
           <>
             <Input
+              value={boxOne}
+              onChange={(e) => setBoxOne(e.target.value)}
               placeholder={t("searchWhatPlaceholder")}
               aria-label={t("searchWhatLabel")}
               className="w-full max-w-sm"
             />
             <Input
+              value={boxTwo}
+              onChange={(e) => setBoxTwo(e.target.value)}
               placeholder={t("searchWherePlaceholder")}
               aria-label={t("searchWhereLabel")}
               className="w-full max-w-sm"
