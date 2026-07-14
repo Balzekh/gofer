@@ -6,13 +6,17 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle/toggle-group";
+
+const MAX_MESSAGE_LENGTH = 500;
 
 export function Accueil() {
   const t = useTranslations("accueil");
   const tags: string[] = t.raw("tags");
   const [expanded, setExpanded] = useState(false);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [message, setMessage] = useState("");
 
   return (
     <section
@@ -65,6 +69,20 @@ export function Accueil() {
                 </ToggleGroupItem>
               ))}
             </ToggleGroup>
+
+            <div className="relative w-full">
+              <Textarea
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                maxLength={MAX_MESSAGE_LENGTH}
+                placeholder={t("messagePlaceholder")}
+                aria-label={t("messageLabel")}
+                className="h-72 w-full resize-none overflow-y-auto pb-7 field-sizing-fixed"
+              />
+              <span className="pointer-events-none absolute bottom-2 right-3 text-xs text-muted-foreground">
+                {t("charCount", { count: message.length, max: MAX_MESSAGE_LENGTH })}
+              </span>
+            </div>
           </Card>
         )}
 

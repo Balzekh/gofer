@@ -21,6 +21,9 @@
     "searchButton": "Rechercher",
     "boxOneLabel": "Champ 1",
     "boxTwoLabel": "Champ 2",
+    "messagePlaceholder": "Décrivez votre besoin en détail…",
+    "messageLabel": "Description du besoin",
+    "charCount": "{count} / {max}",
     "tags": ["Courses", "Livraison", "Ménage", "Bricolage", "Déménagement", "Jardinage"]
   },
   "avis": {
