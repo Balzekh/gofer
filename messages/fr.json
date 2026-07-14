@@ -18,7 +18,10 @@
     "searchWhatLabel": "Besoin",
     "searchWherePlaceholder": "Où ?",
     "searchWhereLabel": "Localisation",
-    "searchButton": "Rechercher"
+    "searchButton": "Rechercher",
+    "boxOneLabel": "Champ 1",
+    "boxTwoLabel": "Champ 2",
+    "tags": ["Courses", "Livraison", "Ménage", "Bricolage", "Déménagement", "Jardinage"]
   },
   "avis": {
     "title": "Ils nous font confiance",
