@@ -1,6 +1,6 @@
 import { Accueil } from "@/components/sections/accueil";
-import { Avis } from "@/components/sections/avis";
-import { Faq } from "@/components/sections/faq";
+import { Avis } from "@/components/sections/reassurance/avis";
+import { Faq } from "@/components/sections/reassurance/faq";
 import { Presentation } from "@/components/sections/presentation";
 import { Tarifs } from "@/components/sections/tarifs";
 
