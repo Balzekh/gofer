@@ -13,7 +13,8 @@ const MAX_MESSAGE_LENGTH = 500;
 
 export function Accueil() {
   const t = useTranslations("accueil");
-  const tags: string[] = t.raw("tags");
+  const rawTags = t.raw("tags");
+  const tags: string[] = Array.isArray(rawTags) ? rawTags : [];
   const [expanded, setExpanded] = useState(false);
   const [boxOne, setBoxOne] = useState("");
   const [boxTwo, setBoxTwo] = useState("");

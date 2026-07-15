@@ -19,7 +19,8 @@ const EXPANDED_CARD_WIDTH = 520;
 
 export function Faq() {
   const t = useTranslations("faq");
-  const items: FaqItem[] = t.raw("items");
+  const rawItems = t.raw("items");
+  const items: FaqItem[] = Array.isArray(rawItems) ? rawItems : [];
   const trackRef = useRef<HTMLDivElement>(null);
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
