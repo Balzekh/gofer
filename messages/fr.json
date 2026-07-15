@@ -32,6 +32,8 @@
   "faq": {
     "title": "Les questions fréquentes",
     "subtitle": "Tout ce que vous devez savoir avant de vous lancer.",
+    "nextCard": "Carte suivante",
+    "previousCard": "Carte précédente",
     "items": [
       { "question": "Qu'est-ce que GOFER ?", "answer": "GOFER est un service à la demande qui met un assistant à votre disposition pour vos courses et vos tâches du quotidien." },
       { "question": "Dans quelles villes êtes-vous disponibles ?", "answer": "Nous couvrons les principales agglomérations et nous étendons notre réseau chaque mois." },

@@ -29,8 +29,6 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const t = useTranslations("header");
 
-  // Toggle between the hero and scrolled states based on scroll position.
-  // Instant switch — no animation for now (deferred).
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > SCROLL_THRESHOLD);
 
@@ -39,7 +37,6 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Smooth-scroll to the target section without writing the hash to the URL.
   const handleNavClick = (
     event: React.MouseEvent<HTMLAnchorElement>,
     href: string
@@ -65,15 +62,12 @@ export function Header() {
           scrolled ? "py-2.5" : "py-7"
         )}
       >
-        {/* Logo + nav, grouped so nav sits flush against the logo once scrolled */}
         <div className="flex items-center gap-x-10">
           <a
             href="#accueil"
             onClick={(event) => handleNavClick(event, "#accueil")}
             className={cn(
               "flex items-center gap-2 rounded-sm outline-none focus-visible:ring-2 focus-visible:ring-ring/50",
-              // Hero: logo lifted out of flow and centered on the row.
-              // Scrolled: back in normal flow, flush left.
               !scrolled &&
                 "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
             )}
@@ -105,7 +99,6 @@ export function Header() {
           </nav>
         </div>
 
-        {/* CTA, always right-aligned */}
         <div className="flex items-center">
           <Button type="button" variant="default" size="sm">
             {t("login")}
